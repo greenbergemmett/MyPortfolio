@@ -524,7 +524,8 @@ footer {
 }
 
 .mySlides img {
-  width: 100%;
+  width: 40%;
+  height: 60%;	
   max-height: 550px;
   object-fit: cover;
 }
