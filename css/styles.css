@@ -606,12 +606,16 @@ footer {
   max-width: 100%; /* Ensure the image fits the container's width */
   max-height: 100%; /* Ensure the image fits within the container's height */
   object-fit: contain; /* Ensure the aspect ratio is maintained */
+}
 
+/* Center an image */
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+
 .project-info {
   flex: 1; /* Adjust the size of the info section */
   padding: 15px;
