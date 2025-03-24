@@ -93,17 +93,39 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img
+							<div id="Building Permits" class="project shadow-large">
+            		<div id="carousel1" class="project-carousel">
+              		<div class="mySlides fade">
+                    <img
 				            src="assets/BD4C/permitValueBinaryByCT.png"
+										alt="Map showing whether building permit values are higher or lower than average per census tract"
 				            width="500"
 				            height="400"
-			
-		 	            />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
+		 	            	/>
+                	</div>
+									<div class="mySlides fade">
+                		<img
+                  		src="./assets/BD4C/comm_invbyCT.png"
+                  		alt="Map showing the commerical inventory by census tract"
+               	 		/>
+									</div>
+									<!-- Next and previous buttons with Font Awesome -->
+              		<a class="prev" onclick="plusSlides(-1, 1)">
+                		<i class="fa fa-chevron-left"></i>
+              		</a>
+              		<a class="next" onclick="plusSlides(1, 1)">
+                		<i class="fa fa-chevron-right"></i>
+              		</a>
+									<!-- The dots/circles within the carousel -->
+              		<div class="dot-container">
+		                <span class="dot" onclick="currentSlide(1, 1)"></span>
+		                <span class="dot" onclick="currentSlide(2, 1)"></span>
+		                <span class="dot" onclick="currentSlide(3, 1)"></span>
+		                <span class="dot" onclick="currentSlide(4, 1)"></span>
+              		</div>
+								</div>
+								<!-- End .project-carousel -->
+								<div class="project-info">
                         <h3>Analysis of Building Permit Valuations in Boston</h3>
                         <p>
                            This project uses R to determine the factors most correlated with building permit values in Boston, particularly the differences between commercial and residential permit values. Skills essential to this analysis include aggregation, merging data sets, making maps, and statistical inference using t-tests and multivariate regression. 
