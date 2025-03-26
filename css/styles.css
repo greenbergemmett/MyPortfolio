@@ -522,7 +522,7 @@ footer {
   text-align: center;
   margin-top: 10px;
   width: 100%; /* Ensures the dots align with the carousel width */
-  position: bottom;
+  position: absolute;
   bottom: 10px; /* Positioned below the carousel */
 }
 
@@ -530,7 +530,7 @@ footer {
 .prev,
 .next {
   cursor: pointer;
-  position: bottom;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 16px;
