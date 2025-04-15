@@ -125,11 +125,15 @@
 					</div>
 					<!-- End .project-carousel -->
 					<div class="project-info">
-                        <h3>Analysis of Building Permit Valuations in Boston</h3>
+                        <h3>Analyzing Building Permit Valuations to Understand Development Inequities in Boston</h3>
                         <p>
-                           This project uses R to determine the factors most correlated with building permit values in Boston, particularly the differences between commercial and residential permit values. Skills essential to this analysis include aggregation, merging data sets, making maps, and statistical inference using t-tests and multivariate regression. 
+                            In this project, I used R to explore the underlying drivers of building permit valuations across Boston neighborhoods, with a focus on identifying differences between commercial and residential developments. The goal was to understand how development patterns—reflected in permit values—correlate with socioeconomic and infrastructural characteristics of local communities.
 						    <br></br>
-							My analysis found that characteristics of the surrounding population such as income, race/ethnicity, and transportation access tend to be associated with permit activities and expenditures. Addressing the inequities in places with lower permit values is critical to improving the affordability of housing and residential properties, as well as improving the affordability and access to goods and services that commercial properties provide. The skills of analyzing this data set, especially multivariate regression, can be applied more broadly to addressing the housing and rental affordability crisis in Boston.
+							This analysis involved a range of data science techniques, including data cleaning, spatial joins, dataset merging, and summarization. I also created maps to visualize spatial patterns in permit activity and conducted statistical inference through t-tests and multivariate linear regression. These methods helped isolate the impact of variables such as median household income, racial and ethnic composition, and access to public transportation on building permit values.
+                            <br></br>
+                            My key findings revealed that areas with higher income levels and better transit access tend to receive permits for higher-value developments, both residential and commercial. Conversely, lower permit values were more common in communities with higher proportions of residents of color and lower incomes. These disparities suggest uneven investment in Boston’s built environment, which can reinforce existing inequalities in access to quality housing, economic opportunity, and services.
+                            <br></br>
+                            This project highlights the importance of equitable urban development. The ability to quantify and visualize these disparities using multivariate analysis has implications for public policy and planning—particularly in targeting resources to support affordable housing and small business growth in historically underinvested areas.
                         </p>
                         <a href="./assets/BD4C/BD4C_FinalProject_EmmettGreenberg.pdf">View Full Report</a>
                     </div>
@@ -149,17 +153,25 @@
                     <div class="project-info">
                         <h3>Mapping Pedestrian Safety in Environmental Justice Communities in Boston</h3>
                         <p>
-                            This project uses ArcGIS Pro to explore pedestrian safety in
+                            This project leveraged <b>ArcGIS Pro</b> to investigate the relationship between pedestrian safety and 
                             <a 
                                 href="https://www.mass.gov/info-details/environmental-justice-populations-in-massachusetts"
                                 target="_blank" 
                                 >
-                                Environmental Justice (EJ) communities
-                            </a> in Boston. In my analysis, I aimed to find correlations between pedestrian crashes, sidewalk quality, number of reported safety concerns, and EJ criteria such median income, minority population, and English language proficiency. I used Spatial Joins on each layer with the EJ block groups layer to summarize the totals for each block group. The maps I created suggest a moderate negative correlation between crashes and the quality of pedestrian infrastructure. However, the pedestrian crash counts do not appear to be correlated with the low-income block groups any more than they are correlated with block groups that are not low-income. 
-							<br></br>
-							Based on my results, I would recommend that the city try to improve the condition of its sidewalks in Environmental Justice communities. This might mean repairing the concrete, widening sidewalks where feasible, or adding dedicated pedestrian facilities such as footpaths, bridges, and ramps. To address safety concerns, the city could implement traffic calming measures, such as speed humps and pedestrian refuge islands. Other recommendations include talking to people in the community about their needs, conducting traffic studies, and observing driver and pedestrian behavior in these communities.
-
-                        </p>
+                                environmental justice (EJ) indicators
+                            </a>
+                             across Boston neighborhoods. The primary objective was to explore whether residents in EJ-designated block groups—defined by factors such as low income, high minority populations, and limited English proficiency—face disproportionate risks related to pedestrian infrastructure and traffic safety.
+                             <br></br>
+                             I integrated and analyzed multiple spatial datasets, including pedestrian crash locations (sourced from MassDOT), reported sidewalk quality issues, and public safety concern reports. Using spatial joins, I aggregated these variables at the census block group level and linked them with EJ criteria from the Massachusetts Executive Office of Energy and Environmental Affairs. This allowed me to identify patterns in pedestrian crashes, infrastructure quality, and reported concerns in relation to neighborhood demographics.
+                            <br></br>
+                            The maps and spatial summaries I created revealed a moderate negative correlation between sidewalk quality and pedestrian crashes—suggesting that areas with poorer pedestrian infrastructure may be more prone to crashes. However, crash counts did not show a strong correlation with income levels alone, indicating that unsafe conditions may be widespread and not exclusively concentrated in low-income areas.
+                            <br></br>
+                            Based on these findings, I recommend that the City of Boston prioritize targeted infrastructure improvements in EJ communities, where sidewalk quality issues often overlap with historically underinvested areas. These improvements could include repairing or replacing damaged sidewalks, widening pedestrian pathways, and introducing dedicated infrastructure such as pedestrian bridges, footpaths, and ADA-compliant ramps.
+                            <br></br>
+                            To further enhance pedestrian safety, the city could implement traffic calming interventions like raised crosswalks, speed humps, daylighting intersections, and pedestrian refuge islands. Importantly, these efforts should be guided by community engagement: listening to residents’ lived experiences, conducting localized traffic studies, and observing driver and pedestrian behavior can help ensure that interventions are responsive to neighborhood-specific needs.
+                            <br></br>
+                            This project highlights the potential of spatial analysis to inform more equitable urban planning and transportation safety policies—particularly in communities that have historically been overlooked in infrastructure investments.
+                      </p>
                         <a 
 							href="./assets/GIS/GIS_Pedestrian Safety and Environmental Justice in Boston.pdf"
 							target="_blank"
@@ -188,16 +200,17 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Visualizing Traffic Patterns in Massachusetts</h3>
+                        <h3>Visualizing the Impact of COVID-19 on Traffic Patterns in Massachusetts</h3>
                         <p>
-                            This project uses R to analyze changes in traffic patterns in Massachusetts from 2019 to 2020, during the onset of the COVID-19 pandemic.
-                            I created visualizations showing changes in speed and the number of car accidents by road type (interstate, arterial, local road, etc.), 
-                            using boxplots to show the distributions of each of these two variables. 
-                            Using Canva, I created an infograhpic which spotlights the communities in Massachusetts that saw the biggest increase in accidents
-                            in 2020. It also displays trends occurring on different types of roads as well as correlations between speed and accidents.
-			
+                            In this project, I used R to examine how traffic patterns across Massachusetts changed from 2019 to 2020, with a particular focus on the effects of the COVID-19 pandemic. By analyzing statewide traffic data, I explored shifts in vehicle speeds and the frequency of car accidents across various road types—including interstates, arterials, and local roads.
 			            <br></br>
-                            My findings found that while most road types saw fewer accidents in 2020 compared to 2019, <b>local roads averaged about two more accidents in 2020</b>, in addition to average higher speeds of 4.68 mph.
+                        To uncover trends and outliers, I created boxplots that visualized the distribution of both speed and accident counts across road categories. These visualizations provided a clear snapshot of how driving behaviors and safety outcomes evolved during a period of significant social disruption and reduced travel demand.
+                        <br></br>
+                        Building on the R analysis, I used Canva to design an engaging infographic that communicated the key findings in an accessible and impactful way. The infographic highlighted the Massachusetts communities that experienced the greatest increases in traffic accidents in 2020, alongside road-type-specific trends and a visual summary of the correlation between speed and crash rates.
+                        <br></br>
+                        One of the most striking findings was that, despite an overall decrease in traffic volume and accidents statewide, local roads experienced a modest but notable increase—averaging approximately two additional crashes per road segment in 2020 compared to 2019. These local roads also saw an average increase in vehicle speed of 4.68 mph, suggesting that lower congestion may have contributed to riskier driving behaviors in neighborhood settings.
+                        <br></br>
+                        This project demonstrates how data visualization and statistical analysis can be used to uncover hidden patterns in public safety data. It also underscores the importance of closely monitoring local roads during periods of major societal change, when reduced enforcement and altered mobility patterns may unintentionally increase crash risk in residential areas.    
                         </p>
                         <a 
 							href="https://www.canva.com/design/DAGMLI0yeOA/7ln7SxS_GEHtuHHkmn1bww/edit?utm_content=DAGMLI0yeOA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
