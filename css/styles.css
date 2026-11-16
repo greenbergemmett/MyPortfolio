@@ -511,6 +511,9 @@ footer {
   margin: 15px;
 }
 
+.mySlides { display: none; width: 100%; }
+.mySlides:first-of-type { display: block; }
+
 .mySlides img {
   width: 100%;
   max-height: 550px;
